@@ -2,6 +2,10 @@
 
 Every release of the deployed bot, newest first. This file is updated automatically when a release lands; the version badge in the README reads from [version.json](version.json), same source.
 
+## v1.5.0 · 2026-08-27
+
+le resultat d'un jet se lit comme un resultat
+
 ## v1.4.8 · 2026-08-08
 
 Removed a DNS resolver workaround that had been shipped in v1.4.4. The underlying resolver issue was fixed at the infrastructure level, so the bot no longer needs to cap resolution timeouts itself.
