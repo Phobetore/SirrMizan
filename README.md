@@ -33,7 +33,7 @@ A free dice bot for Discord, built for D&D, Pathfinder, Call of Cthulhu and ever
 Not on Discord right now? The website has a [live playground](https://sirrmizan.threatchaos.org/en/roll/) that runs the exact same dice engine in your browser.
 
 <div align="center">
-<img src="assets/example-roll.svg" width="680" alt="A roll in Discord: !r 2d20kh1+5 Goblin returns two d20s, keeps the 17, adds 5, total 22">
+<img src="assets/example-roll.png" width="507" alt="A roll in Discord: !r 2d20kh1+5 Goblin rolls two d20s, keeps the 20, drops the 3, adds 5, and shows the total 25 on a die face">
 </div>
 
 ## Everything it rolls
