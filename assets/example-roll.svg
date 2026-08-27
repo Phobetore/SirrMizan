@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 332" role="img" aria-label="A roll in Discord: !r 2d20kh1+5 Goblin returns 17 and 9, keeps the 17, adds 5, total 22">
+  <defs>
+    <style>
+      .sans { font-family: ui-sans-serif, -apple-system, "Segoe UI", Roboto, sans-serif; }
+      .mono { font-family: ui-monospace, "Cascadia Code", "SF Mono", Consolas, monospace; }
+    </style>
+  </defs>
+
+  <!-- card -->
+  <rect x="1.5" y="1.5" width="677" height="329" rx="14" fill="#1E1B18" stroke="#3A342E" stroke-width="3"/>
+
+  <!-- channel header -->
+  <text x="28" y="38" class="sans" font-size="14" fill="#7A7871">#</text>
+  <text x="40" y="38" class="sans" font-size="14" fill="#A8A69F">dice-table</text>
+  <line x1="20" y1="52" x2="660" y2="52" stroke="#2A2622" stroke-width="1"/>
+
+  <!-- user message -->
+  <circle cx="46" cy="88" r="18" fill="#3A5A8A"/>
+  <text x="46" y="94" class="sans" font-size="16" font-weight="600" fill="#F5EFE6" text-anchor="middle">P</text>
+  <text x="76" y="82" class="sans" font-size="15" font-weight="600" fill="#F5EFE6">Phobetore</text>
+  <text x="162" y="82" class="sans" font-size="11" fill="#7A7871">today at 21:04</text>
+  <text x="76" y="104" class="mono" font-size="15" fill="#D8D2C8">!r 2d20kh1+5 Goblin</text>
+
+  <!-- bot message -->
+  <circle cx="46" cy="152" r="18" fill="#A24E33"/>
+  <!-- tiny die on the avatar -->
+  <rect x="38" y="144" width="16" height="16" rx="4" fill="#F5EFE6"/>
+  <circle cx="42.5" cy="148.5" r="1.6" fill="#A24E33"/>
+  <circle cx="49.5" cy="148.5" r="1.6" fill="#A24E33"/>
+  <circle cx="42.5" cy="155.5" r="1.6" fill="#A24E33"/>
+  <circle cx="49.5" cy="155.5" r="1.6" fill="#A24E33"/>
+  <circle cx="46" cy="152" r="1.6" fill="#A24E33"/>
+  <text x="76" y="146" class="sans" font-size="15" font-weight="600" fill="#F5EFE6">SirrMizan</text>
+  <rect x="156" y="134" width="34" height="16" rx="4" fill="#5865F2"/>
+  <text x="173" y="146" class="sans" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">BOT</text>
+  <text x="198" y="146" class="sans" font-size="11" fill="#7A7871">today at 21:04</text>
+
+  <!-- embed -->
+  <rect x="76" y="162" width="420" height="140" rx="8" fill="#26221E"/>
+  <rect x="76" y="162" width="5" height="140" rx="2.5" fill="#A24E33"/>
+
+  <text x="98" y="190" class="sans" font-size="14" font-weight="600" fill="#F5EFE6">Advantage roll vs Goblin</text>
+
+  <text x="98" y="218" class="sans" font-size="13" fill="#A8A69F">d20</text>
+  <!-- kept die -->
+  <rect x="132" y="202" width="26" height="26" rx="6" fill="#A24E33"/>
+  <text x="145" y="220" class="mono" font-size="14" font-weight="700" fill="#F5EFE6" text-anchor="middle">17</text>
+  <!-- dropped die -->
+  <rect x="166" y="202" width="26" height="26" rx="6" fill="#2E2A25" stroke="#3A342E"/>
+  <text x="179" y="220" class="mono" font-size="14" fill="#7A7871" text-anchor="middle">9</text>
+  <line x1="168" y1="226" x2="190" y2="204" stroke="#7A7871" stroke-width="1.4"/>
+  <text x="204" y="220" class="sans" font-size="13" fill="#A8A69F">keep highest</text>
+  <text x="306" y="220" class="mono" font-size="14" fill="#D8D2C8">+5</text>
+
+  <line x1="98" y1="242" x2="476" y2="242" stroke="#3A342E" stroke-width="1"/>
+
+  <text x="98" y="278" class="sans" font-size="13" fill="#A8A69F">Total</text>
+  <text x="150" y="284" class="mono" font-size="30" font-weight="700" fill="#E08C5F">22</text>
+  <text x="196" y="278" class="sans" font-size="12" fill="#7A7871">17 + 5 · cryptographic RNG</text>
+</svg>

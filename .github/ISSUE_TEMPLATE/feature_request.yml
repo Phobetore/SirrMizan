@@ -1,0 +1,23 @@
+name: Feature request
+description: Something the bot should do and does not.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What you are trying to do at the table
+      description: The situation first, not the solution. "We play Blades in the Dark and count sixes" beats "add success counting".
+      placeholder: "Our group plays..."
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: How you imagine it working
+      placeholder: "!r 6d6 with something that..."
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        Fair warning, so no one wastes an evening writing: SirrMizan deliberately stays a dice bot, not a rules engine. Character sheets, per-system automation and success judging are out of scope by design, see the [philosophy](../../blob/main/README.md#philosophy-a-dice-bot-not-a-rules-engine). Everything that can be spelled with dice, keep/drop and repeats is fair game.

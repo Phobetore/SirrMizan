@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Support server on Discord
+    url: https://discord.gg/wAbMMPnwbg
+    about: Faster for questions, setup help, or anything that is not a bug.
+  - name: Live status page
+    url: https://sirrmizan.threatchaos.org/en/status/
+    about: Check here before reporting an outage.
+  - name: Documentation
+    url: https://sirrmizan.threatchaos.org/en/
+    about: Commands, dice syntax and per-game guides, in four languages.

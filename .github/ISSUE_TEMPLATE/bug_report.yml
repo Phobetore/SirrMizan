@@ -1,0 +1,40 @@
+name: Bug report
+description: Something rolled wrong, answered wrong, or did not answer at all.
+labels: [bug]
+body:
+  - type: input
+    id: command
+    attributes:
+      label: The exact command you typed
+      placeholder: "!r 6#4d6kh3"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected, and what happened instead
+      placeholder: "Expected six stat lines, got an error about the repeat count."
+    validations:
+      required: true
+  - type: input
+    id: when
+    attributes:
+      label: Roughly when it happened (date, time, timezone)
+      placeholder: "2026-08-27 around 21:00 CEST"
+    validations:
+      required: false
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where
+      options:
+        - In a server channel
+        - In a direct message
+        - Both
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        No user data is stored by the bot, so the command text and the time are what make a bug findable in the logs. Thanks for both.
+        Outage rather than bug? Check the [status page](https://sirrmizan.threatchaos.org/en/status/) first.
