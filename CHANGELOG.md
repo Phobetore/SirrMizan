@@ -2,6 +2,10 @@
 
 Every release of the deployed bot, newest first. This file is updated automatically when a release lands; the version badge in the README reads from [version.json](version.json), same source.
 
+## v1.5.5 · 2026-08-29
+
+Fixed, the public changelog stopped receiving releases
+
 ## v1.5.4 · 2026-08-28
 
 The help was four stacked code blocks that scrolled sideways on a phone. It reads as a page now: real headings, examples that wrap, and the link to the site next to the section it belongs to, in your own accent colour. The message a server gets when the bot joins follows the same shape.
