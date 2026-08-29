@@ -2,9 +2,25 @@
 
 Every release of the deployed bot, newest first. This file is updated automatically when a release lands; the version badge in the README reads from [version.json](version.json), same source.
 
+## v1.5.4 · 2026-08-28
+
+The help was four stacked code blocks that scrolled sideways on a phone. It reads as a page now: real headings, examples that wrap, and the link to the site next to the section it belongs to, in your own accent colour. The message a server gets when the bot joins follows the same shape.
+
+## v1.5.3 · 2026-08-28
+
+Compact results put the total on a line of its own, so it can be found when scrolling back through a session. The expression and the breakdown move to the line beneath it.
+
+## v1.5.2 · 2026-08-28
+
+The die faces ship with the bot instead of being fetched from the website, so the picture beside a roll no longer depends on the site being reachable.
+
+## v1.5.1 · 2026-08-28
+
+Fixed the die face sitting on a grey square the first time it appeared on Android, which only cleared after restarting the app. The image travels with the message now, so there is nothing left for the client to resolve.
+
 ## v1.5.0 · 2026-08-27
 
-le resultat d'un jet se lit comme un resultat
+Roll results rebuilt. The total is drawn as a die face, the dice and the modifiers are labelled apart, and the result reads across the message instead of stretching down the channel.
 
 ## v1.4.8 · 2026-08-08
 
