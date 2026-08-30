@@ -108,7 +108,7 @@ Every command, every language, every feature. No premium tier, no vote-locked fe
 
 SirrMizan deliberately does not manage character sheets, apply system rules, or judge your successes. The dice are rolled honestly and the maths is shown; reading the result against a DC or a skill value stays where it belongs, at the table.
 
-That is a real trade-off, and if you want deep D&D 5e automation with sheet integration, [Avrae](https://avrae.io/) is excellent at exactly that. The comparison page on our site says plainly [when another bot is the better pick](https://sirrmizan.threatchaos.org/en/compare/).
+That is a real trade-off. If you want deep D&D 5e automation with character sheet integration, a dedicated bot will serve you better, and the comparison page on our site says plainly [when another bot is the better pick](https://sirrmizan.threatchaos.org/en/compare/).
 
 What the small core buys you: zero setup, a syntax that works for any game ever printed, and a bot that has very little to break. The [status page](https://sirrmizan.threatchaos.org/en/status/) shows the uptime that approach produces, live.
 
@@ -130,4 +130,4 @@ The bot runs on Python and py-cord, on self-managed infrastructure. The Discord 
 
 The bot's source code is closed; this repository is its public face: documentation, changelog, version file, issue tracker. Everything here is kept in sync with the deployed bot.
 
-Text and documentation © Phobetore. Quote freely with a link. Artwork by [ladymagpie](https://sirrmizan.threatchaos.org/en/), all rights reserved.
+Text and documentation © Phobetore. Quote freely with a link. Artwork by [ladymagpie](https://bsky.app/profile/ladymagpie.bsky.social), all rights reserved.
