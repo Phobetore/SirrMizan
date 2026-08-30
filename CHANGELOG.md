@@ -2,6 +2,10 @@
 
 Every release of the deployed bot, newest first. This file is updated automatically when a release lands; the version badge in the README reads from [version.json](version.json), same source.
 
+## v1.5.6 · 2026-08-30
+
+Added, the weekly report measures engagement and retention
+
 ## v1.5.5 · 2026-08-29
 
 Fixed, the public changelog stopped receiving releases
