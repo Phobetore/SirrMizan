@@ -2,6 +2,10 @@
 
 Every release of the deployed bot, newest first. This file is updated automatically when a release lands; the version badge in the README reads from [version.json](version.json), same source.
 
+## v1.5.11 · 2026-08-30
+
+Added, every command is timed · Added, the weekly report shows latency, and an alert watches it · Fixed, the reinstall command in the monitoring doc could not run
+
 ## v1.5.9 · 2026-08-30
 
 Documentation, the monitoring scripts do not deploy themselves
