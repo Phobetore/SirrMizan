@@ -2,6 +2,10 @@
 
 Every release of the deployed bot, newest first. This file is updated automatically when a release lands; the version badge in the README reads from [version.json](version.json), same source.
 
+## v1.5.13 · 2026-08-31
+
+Added, the stats log records whether a command was a slash or a prefix
+
 ## v1.5.12 · 2026-08-30
 
 Added, the weekly report puts the network next to the commands
