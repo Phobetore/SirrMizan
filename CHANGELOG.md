@@ -1,30 +1,10 @@
 # Changelog
 
-Every release of the deployed bot, newest first. This file is updated automatically when a release lands; the version badge in the README reads from [version.json](version.json), same source.
+What changed for you, newest first. Releases that only touch monitoring, tooling or internals are not listed here, which is why the numbers skip: the version badge in the README reads from [version.json](version.json) and always shows what is actually running.
 
-## v1.5.13 · 2026-08-31
+## v1.5.10 · 2026-08-30
 
-Added, the stats log records whether a command was a slash or a prefix
-
-## v1.5.12 · 2026-08-30
-
-Added, the weekly report puts the network next to the commands
-
-## v1.5.11 · 2026-08-30
-
-Added, every command is timed · Added, the weekly report shows latency, and an alert watches it · Fixed, the reinstall command in the monitoring doc could not run
-
-## v1.5.9 · 2026-08-30
-
-Documentation, the monitoring scripts do not deploy themselves
-
-## v1.5.6 · 2026-08-30
-
-Added, the weekly report measures engagement and retention
-
-## v1.5.5 · 2026-08-29
-
-Fixed, the public changelog stopped receiving releases
+`defaultRoll` now answers when you call it with nothing: it tells you the roll your server uses, and how to change it. Before, it failed with an error, and there was no way to look the setting up at all.
 
 ## v1.5.4 · 2026-08-28
 
@@ -33,10 +13,6 @@ The help was four stacked code blocks that scrolled sideways on a phone. It read
 ## v1.5.3 · 2026-08-28
 
 Compact results put the total on a line of its own, so it can be found when scrolling back through a session. The expression and the breakdown move to the line beneath it.
-
-## v1.5.2 · 2026-08-28
-
-The die faces ship with the bot instead of being fetched from the website, so the picture beside a roll no longer depends on the site being reachable.
 
 ## v1.5.1 · 2026-08-28
 
