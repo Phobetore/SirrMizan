@@ -2,6 +2,10 @@
 
 What changed for you, newest first. Releases that only touch monitoring, tooling or internals are not listed here, which is why the numbers skip: the version badge in the README reads from [version.json](version.json) and always shows what is actually running.
 
+## v1.7.0 · 2026-09-20
+
+save a roll under a name with `!alias perception 1d20+7` and roll it with `!r perception`, and make dice explode on their maximum with `3d6!`.
+
 ## v1.6.0 · 2026-09-20
 
 you can now add SirrDice to your own account, and roll in any server, even one the bot was never added to.
