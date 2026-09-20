@@ -2,6 +2,10 @@
 
 What changed for you, newest first. Releases that only touch monitoring, tooling or internals are not listed here, which is why the numbers skip: the version badge in the README reads from [version.json](version.json) and always shows what is actually running.
 
+## v1.5.17 · 2026-09-20
+
+Rolls keep their die face while the bot's website is down, and in channels where the bot may not post links.
+
 ## v1.5.16 · 2026-09-13
 
 In a channel where the bot may not show images, rolls now arrive as text with a note on how to get the full display back.
