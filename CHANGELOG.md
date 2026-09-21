@@ -2,6 +2,10 @@
 
 What changed for you, newest first. Releases that only touch monitoring, tooling or internals are not listed here, which is why the numbers skip: the version badge in the README reads from [version.json](version.json) and always shows what is actually running.
 
+## v1.8.0 · 2026-09-21
+
+`!prob 4d6kh3` estimates what a roll usually comes to before you make it, `/roll` can keep a result to yourself with `hidden`, and `/settings` shows a server's configuration at a glance.
+
 ## v1.7.0 · 2026-09-20
 
 save a roll under a name with `!alias perception 1d20+7` and roll it with `!r perception`, and make dice explode on their maximum with `3d6!`.
