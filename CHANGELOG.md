@@ -2,6 +2,10 @@
 
 What changed for you, newest first. Releases that only touch monitoring, tooling or internals are not listed here, which is why the numbers skip: the version badge in the README reads from [version.json](version.json) and always shows what is actually running.
 
+## v1.8.2 · 2026-09-25
+
+`2d20kh` now rolls with advantage and `2d20kl` with disadvantage, no need for the 1. Percentages are written the way your language writes them, and a server that adds the bot is answered in the language its Discord is set to.
+
 ## v1.8.1 · 2026-09-21
 
 `!prob 1d100 <= 5` now answers. The chances of a roll can be asked in either direction, and for an exact number: `>= 15`, `<= 5`, `= 20`.
