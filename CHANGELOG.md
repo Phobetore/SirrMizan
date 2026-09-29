@@ -2,6 +2,10 @@
 
 What changed for you, newest first. Releases that only touch monitoring, tooling or internals are not listed here, which is why the numbers skip: the version badge in the README reads from [version.json](version.json) and always shows what is actually running.
 
+## v1.8.3 · 2026-09-29
+
+Two rolls in the same second both go through, where the second one used to get a cooldown error. The rare roll that stalled for five seconds, or failed as a slash command, now waits about a second.
+
 ## v1.8.2 · 2026-09-25
 
 `2d20kh` now rolls with advantage and `2d20kl` with disadvantage, no need for the 1. Percentages are written the way your language writes them, and a server that adds the bot is answered in the language its Discord is set to.
