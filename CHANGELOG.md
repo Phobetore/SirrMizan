@@ -2,6 +2,10 @@
 
 What changed for you, newest first. Releases that only touch monitoring, tooling or internals are not listed here, which is why the numbers skip: the version badge in the README reads from [version.json](version.json) and always shows what is actually running.
 
+## v1.9.0 · 2026-10-08
+
+`1d20+5 adv` now rolls with advantage and `1d20+5 dis` with disadvantage, in all four languages. A roll the bot can't fully read is refused with the spelling that works, where it used to give a result that looked right and wasn't, and `/help` opens on what's new.
+
 ## v1.8.3 · 2026-09-29
 
 Two rolls in the same second both go through, where the second one used to get a cooldown error. The rare roll that stalled for five seconds, or failed as a slash command, now waits about a second.
