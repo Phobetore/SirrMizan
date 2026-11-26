@@ -2,6 +2,10 @@
 
 What changed for you, newest first. Releases that only touch monitoring, tooling or internals are not listed here, which is why the numbers skip: the version badge in the README reads from [version.json](version.json) and always shows what is actually running.
 
+## v1.10.0 · 2026-11-26
+
+`/feedback` opens a window to send the developer a comment, a bug, an idea or a question, without leaving your server. You can call the bot by mentioning it, `@SirrDice r 1d20`, when you've forgotten the server's prefix, and `!R 1d20` works on a phone that capitalizes the first letter. A term can roll up to 100 dice, `1d20 + d4` rolls both dice, and `!r help` answers with the help. Slash commands show their descriptions in French, German and Spanish, and a reply only you can see comes in your language when the server hasn't set one.
+
 ## v1.9.0 · 2026-10-08
 
 `1d20+5 adv` now rolls with advantage and `1d20+5 dis` with disadvantage, in all four languages. A roll the bot can't fully read is refused with the spelling that works, where it used to give a result that looked right and wasn't, and `/help` opens on what's new.
