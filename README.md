@@ -12,9 +12,9 @@ A free dice bot for Discord, built for D&D, Pathfinder, Call of Cthulhu and ever
 [![Site](https://img.shields.io/website?url=https%3A%2F%2Fsirrmizan.threatchaos.org&label=site&up_color=2f6f4e)](https://sirrmizan.threatchaos.org/en/)
 [![Languages](https://img.shields.io/badge/replies%20in-EN%20%C2%B7%20FR%20%C2%B7%20DE%20%C2%B7%20ES-3a5a8a)](https://sirrmizan.threatchaos.org/)
 [![Price](https://img.shields.io/badge/price-free%2C%20all%20of%20it-2f6f4e)](#everything-is-free)
-[![Status](https://img.shields.io/badge/uptime-status%20page-4a4a43)](https://sirrmizan.threatchaos.org/en/status/)
+[![Status](https://img.shields.io/badge/uptime-status%20page-4a4a43)](https://status.sirrmizan.threatchaos.org/status/sirrmizan)
 
-[**Add to Discord**](https://discord.com/oauth2/authorize?client_id=1044351816307048508&permissions=19456&integration_type=0&scope=bot+applications.commands) ·
+[**Add to Discord**](https://discord.com/oauth2/authorize?client_id=1044351816307048508&permissions=274877959168&integration_type=0&scope=bot+applications.commands) ·
 [Try it in your browser](https://sirrmizan.threatchaos.org/en/roll/) ·
 [Website](https://sirrmizan.threatchaos.org/en/) ·
 [top.gg](https://top.gg/bot/1044351816307048508) ·
@@ -26,7 +26,7 @@ A free dice bot for Discord, built for D&D, Pathfinder, Call of Cthulhu and ever
 
 ## Try it in ten seconds
 
-1. [Click here to invite the bot](https://discord.com/oauth2/authorize?client_id=1044351816307048508&permissions=19456&integration_type=0&scope=bot+applications.commands). You need the Manage Server permission.
+1. [Click here to invite the bot](https://discord.com/oauth2/authorize?client_id=1044351816307048508&permissions=274877959168&integration_type=0&scope=bot+applications.commands). You need the Manage Server permission.
 2. Type `/roll 1d20` in any channel. Or `!r 1d20`, both always work.
 3. That is the whole setup. No account, no character sheet, no configuration.
 
@@ -46,31 +46,37 @@ One short expression per roll. The syntax is the same in every language and for 
 | `!r 2d6+3` | Two d6 plus a flat modifier |
 | `!r 1d20+5 Goblin` | A named roll, so the table knows who you are swinging at |
 | `!r 2d20kh1+5` | Advantage: two d20, keep the highest, add 5 |
+| `!r 1d20+5 adv` | The same advantage in a word; `dis` keeps the lowest |
 | `!r 2d20kl1` | Disadvantage: keep the lowest |
 | `!r 4d6kh3` | One D&D ability score: four d6, keep the best three |
 | `!r 6#4d6kh3` | A full set of six ability scores in one message |
 | `!r 4d6dl1` | Drop the lowest die instead |
 | `!r 1d100` | Percentile, for Call of Cthulhu and friends |
+| `!r 3d6!` | Exploding dice: a die that lands on its maximum rolls again and adds up |
 | `!r 2d6+1d4+3` | Mix any dice and modifiers freely |
 | `!r` | Your server's default roll, if one is set |
 
-There is no keyword to memorize beyond `kh`, `kl`, `dh`, `dl` and the `N#` repeat. Advantage is not a special mode, it is just `2d20kh1`, which means the same logic works for every house rule you can spell with dice.
+Beyond `kh`, `kl`, `dh`, `dl`, the `N#` repeat and `!` for exploding dice, there are two words to know: `adv` and `dis`, after a roll of one die. They are shorthand for keeping the better or the worse of two dice, so advantage stays plain dice underneath, and the same logic works for every house rule you can spell with dice.
 
-Limits, so nobody floods a channel: 50 dice per term, 20 repeats, 100 characters per command.
+Limits, so nobody floods a channel: 100 dice per term, 20 repeats, 100 characters per command.
 
 Full reference: [docs/dice-syntax.md](docs/dice-syntax.md) · per-game guides for [D&D 5e](https://sirrmizan.threatchaos.org/en/dnd-5e-dice-bot/), [Pathfinder 2e](https://sirrmizan.threatchaos.org/en/pathfinder-2e-dice-bot/) and [Call of Cthulhu](https://sirrmizan.threatchaos.org/en/call-of-cthulhu-dice-bot/).
 
 ## Commands
 
-Every command works both as a `/slash` command and with the prefix (`!` by default, changeable per server).
+Every command works both as a `/slash` command and with the prefix (`!` by default, changeable per server), except `/feedback`, which is slash only.
 
 | Command | What it does |
 |---|---|
-| `/roll [expression] [target]` | Roll dice. The only command most tables ever need. |
+| `/roll [expression] [target] [hidden]` | Roll dice. The only command most tables ever need. `hidden` shows the result to you alone. |
+| `/probability [expression] [threshold]` | Your odds before you roll: the average, the range, and your chance of reaching a number. Nothing is rolled. |
+| `/alias [name] [expression]` · `/unalias <name>` | Save a roll under a name, then roll it with `!r name`. |
 | `/help` | The full command list, in your server's language. |
 | `/setcolor` · `/getcolor` | Pick the embed color for your own rolls. |
 | `/setrollshort on\|off` | One-line results, for busy channels. |
 | `/forgetme` | Delete everything the bot knows about you, immediately. |
+| `/feedback` | Send the developer a comment, a bug, an idea or a question, screenshots included. |
+| `/settings` | This server's language, prefix and default roll at a glance. |
 | `/defaultroll <expr>` | Server default for a bare `!r`. Admin only. |
 | `/setlang en\|fr\|de\|es` | Bot language for this server. Admin only. |
 | `/setprefix <prefix>` | Your own prefix. Admin only. |
@@ -87,12 +93,12 @@ Why it matters at a table: ordinary pseudo-random generators follow a sequence t
 
 The honest description of our data practices is a list of things that do not exist:
 
-- No user IDs stored.
 - No message content stored.
-- No roll history stored.
+- No roll history, no results kept.
+- No username or avatar.
 - No analytics, no trackers.
 
-What the bot keeps is a couple of per-server settings (prefix, language, default roll) and, if you set them, your embed color and compact-output preference. `/forgetme` deletes your part of that on the spot. The full policy is two screens long and written for humans: [privacy policy](https://sirrmizan.threatchaos.org/en/privacy/).
+What the bot keeps is a handful of settings, stored against your Discord ID: if you set them, your embed color, your compact-output preference and your roll aliases; for a server, its prefix, language and default roll. `/forgetme` deletes your part of that on the spot. A message sent with `/feedback` reaches the developer with your Discord name, and the bot keeps no copy of it. The full policy is written for humans: [privacy policy](https://sirrmizan.threatchaos.org/en/privacy/).
 
 ## Four languages, really
 
@@ -110,11 +116,11 @@ SirrDice deliberately does not manage character sheets, apply system rules, or j
 
 That is a real trade-off. If you want deep D&D 5e automation with character sheet integration, a dedicated bot will serve you better, and the comparison page on our site says plainly [when another bot is the better pick](https://sirrmizan.threatchaos.org/en/compare/).
 
-What the small core buys you: zero setup, a syntax that works for any game ever printed, and a bot that has very little to break. The [status page](https://sirrmizan.threatchaos.org/en/status/) shows the uptime that approach produces, live.
+What the small core buys you: zero setup, a syntax that works for any game ever printed, and a bot that has very little to break. The [status page](https://status.sirrmizan.threatchaos.org/status/sirrmizan) shows the uptime that approach produces, live.
 
 ## Reliability, in the open
 
-- Live uptime and response times: [status page](https://sirrmizan.threatchaos.org/en/status/)
+- Live uptime and response times: [status page](https://status.sirrmizan.threatchaos.org/status/sirrmizan)
 - Release history: [CHANGELOG.md](CHANGELOG.md), synced automatically from the private repository on every release
 - Current version: the badge at the top of this page, same source
 

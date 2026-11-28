@@ -13,8 +13,10 @@ Two ways to roll: the prefix (`!r`, customizable per server) or the `/roll` slas
 | `4d6kh3` | Keep the 3 highest dice (`kh`). The usual way to roll up stats. |
 | `2d20kh1` | Advantage: roll two d20 and keep the higher one. |
 | `2d20kl1` | Disadvantage: keep the lower of the two (`kl`). |
+| `1d20+5 adv` | Advantage in a word, after a roll of one die: here `2d20kh+5`. `dis` keeps the lower. Each language's word works too: avantage, Vorteil, ventaja. |
 | `4d6dl1` | Drop the lowest die (`dl`). |
 | `5d6dh1` | Drop the highest die (`dh`). |
+| `3d6!` | Exploding dice: a die that lands on its maximum is rolled again and added to itself. |
 | `6#4d6kh3` | Roll the whole expression several times. `6#` gives six stat lines in one message. |
 | `1d20 Goblin` | Add a name after the roll and it shows up on the result. |
 | `!r` | On its own, falls back to the server's default roll, if one was set with `/defaultroll`. |
@@ -29,14 +31,15 @@ Dropped dice stay visible with a strike, so an advantage roll always shows both 
 
 Chosen so a typo cannot flood a channel:
 
-- 50 dice per term
+- 100 dice per term
 - 20 repeats per command (`20#...` is the ceiling)
 - 100 characters per expression
 - Keep and drop must leave at least one die
+- A die explodes at most 10 times in a row
 
 ## What is deliberately absent
 
-No exploding dice, no success counting, no character sheet variables, no per-system keywords. The core stays small so that one syntax serves every game and nothing surprises you mid-session. The reasoning is laid out in the [README's philosophy section](../README.md#philosophy-a-dice-bot-not-a-rules-engine).
+No success counting, no character sheet variables, no per-system rules. The core stays small so that one syntax serves every game and nothing surprises you mid-session. The reasoning is laid out in the [README's philosophy section](../README.md#philosophy-a-dice-bot-not-a-rules-engine).
 
 ## Per-game walkthroughs
 

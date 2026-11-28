@@ -4,10 +4,10 @@
 Yes. Every command, every language, no premium tier and no vote lock.
 
 **How do I add a dice bot to my Discord server?**
-[Click Add to Discord](https://discord.com/oauth2/authorize?client_id=1044351816307048508&permissions=19456&integration_type=0&scope=bot+applications.commands), pick your server, and confirm. You need the Manage Server permission. It works right away, nothing to configure.
+[Click Add to Discord](https://discord.com/oauth2/authorize?client_id=1044351816307048508&permissions=274877959168&integration_type=0&scope=bot+applications.commands), pick your server, and confirm. You need the Manage Server permission. It works right away, nothing to configure.
 
 **How do I roll with advantage in Discord?**
-`!r 2d20kh1` rolls two twenty-sided dice and keeps the highest. For disadvantage, `!r 2d20kl1` keeps the lowest.
+`!r 2d20kh1` rolls two twenty-sided dice and keeps the highest. For disadvantage, `!r 2d20kl1` keeps the lowest. Simpler: `!r 1d20+5 adv` rolls with advantage, and `!r 1d20+5 dis` with disadvantage.
 
 **Does it work for Pathfinder 2e or Call of Cthulhu?**
 Yes. SirrDice is system agnostic, it rolls dice rather than enforcing rules. Pathfinder checks are `1d20+X`, Call of Cthulhu runs on `1d100`.

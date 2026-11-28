@@ -37,4 +37,4 @@ body:
     attributes:
       value: |
         No user data is stored by the bot, so the command text and the time are what make a bug findable in the logs. Thanks for both.
-        Outage rather than bug? Check the [status page](https://sirrmizan.threatchaos.org/en/status/) first.
+        Outage rather than bug? Check the [status page](https://status.sirrmizan.threatchaos.org/status/sirrmizan) first.

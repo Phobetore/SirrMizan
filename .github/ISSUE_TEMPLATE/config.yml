@@ -4,7 +4,7 @@ contact_links:
     url: https://discord.gg/wAbMMPnwbg
     about: Faster for questions, setup help, or anything that is not a bug.
   - name: Live status page
-    url: https://sirrmizan.threatchaos.org/en/status/
+    url: https://status.sirrmizan.threatchaos.org/status/sirrmizan
     about: Check here before reporting an outage.
   - name: Documentation
     url: https://sirrmizan.threatchaos.org/en/
