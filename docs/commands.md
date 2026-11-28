@@ -1,6 +1,6 @@
 # Commands
 
-Everything SirrMizan can do. Every command works both with the prefix (`!` by default) and as a `/slash` command. Admin commands need the Manage Server permission. The prefix shown is the default; each server can change it with `/setprefix`.
+Everything SirrDice can do. Every command works both with the prefix (`!` by default) and as a `/slash` command. Admin commands need the Manage Server permission. The prefix shown is the default; each server can change it with `/setprefix`.
 
 ## Rolling
 

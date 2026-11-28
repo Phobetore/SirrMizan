@@ -1,6 +1,6 @@
 # Frequently asked questions
 
-**Is SirrMizan free?**
+**Is SirrDice free?**
 Yes. Every command, every language, no premium tier and no vote lock.
 
 **How do I add a dice bot to my Discord server?**
@@ -10,7 +10,7 @@ Yes. Every command, every language, no premium tier and no vote lock.
 `!r 2d20kh1` rolls two twenty-sided dice and keeps the highest. For disadvantage, `!r 2d20kl1` keeps the lowest.
 
 **Does it work for Pathfinder 2e or Call of Cthulhu?**
-Yes. SirrMizan is system agnostic, it rolls dice rather than enforcing rules. Pathfinder checks are `1d20+X`, Call of Cthulhu runs on `1d100`.
+Yes. SirrDice is system agnostic, it rolls dice rather than enforcing rules. Pathfinder checks are `1d20+X`, Call of Cthulhu runs on `1d100`.
 
 **Can I roll several ability scores at once?**
 `!r 6#4d6kh3` gives you all six, each one rolling four dice and dropping the lowest.

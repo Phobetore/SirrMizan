@@ -20,4 +20,4 @@ body:
   - type: markdown
     attributes:
       value: |
-        Fair warning, so no one wastes an evening writing: SirrMizan deliberately stays a dice bot, not a rules engine. Character sheets, per-system automation and success judging are out of scope by design, see the [philosophy](../../blob/main/README.md#philosophy-a-dice-bot-not-a-rules-engine). Everything that can be spelled with dice, keep/drop and repeats is fair game.
+        Fair warning, so no one wastes an evening writing: SirrDice deliberately stays a dice bot, not a rules engine. Character sheets, per-system automation and success judging are out of scope by design, see the [philosophy](../../blob/main/README.md#philosophy-a-dice-bot-not-a-rules-engine). Everything that can be spelled with dice, keep/drop and repeats is fair game.
